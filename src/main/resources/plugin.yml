@@ -1,0 +1,7 @@
+name: DiaoCore
+version: '1.0-SNAPSHOT'
+main: org.diao.diaoCore.Main
+api-version: '1.20'
+authors: [ zhi ]
+description: 大貂插件核心，用于处理批量任务
+website: https://github.com/Giant-Diao-Team
