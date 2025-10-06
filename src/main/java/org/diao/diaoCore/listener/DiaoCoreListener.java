@@ -38,16 +38,22 @@ public class DiaoCoreListener implements Listener {
             if (plugin.getServer().getPluginManager().getPlugin("CloudPick") != null && plugin.getServer().getPluginManager().getPlugin("CloudPick").isEnabled()) {
                 // 获取被击杀实体的显示名称
                 String entityName = killedEntity.getName();
-                // 获取被击杀实体的类型名称
-                String entityType = killedEntity.getType().name(); // 使用 .name() 获取枚举的字符串名称
+
+                // 根据被击杀实体类型决定返回 "Player" 还是 "Entity"
+                String entityCategory;
+                if (killedEntity instanceof Player) {
+                    entityCategory = "Player"; // 如果被击杀的是玩家，返回 "Player"
+                } else {
+                    entityCategory = "Entity"; // 如果被击杀的是其他生物，返回 "Entity"
+                }
 
                 // 直接通过 CloudPick API 发送数据给客户端
                 // 标识符: diaocore_kill
-                // 数据: 被击杀实体名称, 被击杀实体类型名称
-                PacketSender.sendCustomData(killer, "diaocore_kill", entityName, entityType);
+                // 数据: 被击杀实体名称, 被击杀实体类别 ("Player" 或 "Entity")
+                PacketSender.sendCustomData(killer, "diaocore_kill", entityName, entityCategory);
 
                 // 插件日志输出，方便调试
-                plugin.getLogger().info(String.format("玩家 %s 击杀了 %s (%s), 已通过 diaocore_kill 发送至客户端。", killer.getName(), entityName, entityType));
+                plugin.getLogger().info(String.format("玩家 %s 击杀了 %s (类别: %s), 已通过 diaocore_kill 发送至客户端。", killer.getName(), entityName, entityCategory));
             } else {
                 plugin.getLogger().warning("尝试发送击杀信息到客户端，但 CloudPick 插件未启用或未安装！");
             }
