@@ -2,7 +2,7 @@
 
 [![作者](https://img.shields.io/badge/作者-止-blue.svg)](https://github.com/ZHI-CCC)
 [![团队](https://img.shields.io/badge/团队-大貂Team-orange.svg)](https://github.com/Giant-Diao-Team)
-[![版本](https://img.shields.io/badge/版本-1.0.0-brightgreen.svg)](https://github.com/Giant-Diao-Team/DiaoCore)
+[![版本](https://img.shields.io/badge/版本-1.0.0-brightgreen.svg)](https://github.com/Giant-Diao-Team/DiaoCore)  
 本插件备注由 CodeGeeX 生成 （自动生成备注是真tmd好用）
 
 一个为 Minecraft Spigot 服务器设计的核心功能插件，旨在提供一系列基础的、通用的功能和工具，以减少其他插件开发时的重复工作，并作为 **大貂团队** 系列插件的基础支撑。
