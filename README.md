@@ -16,7 +16,7 @@
 ## 📥 安装与依赖
 
 1.  **下载插件**:
-    *   前往 [**发布页面**](https://github.com/Giant-Diao-Team/DiaoCore/releases) (待创建) 下载最新的 `DiaoCore-x.x.x.jar` 文件。
+    *   前往 [**云拾社区**](https://www.yunshimc.com/thread-131.htm)下载最新的 `DiaoCore-x.x.x.jar` 文件。
 
 2.  **安装核心插件**:
     *   将下载的 `DiaoCore-x.x.x.jar` 文件放入您服务器的 `plugins` 文件夹。
@@ -25,7 +25,7 @@
     *   **[推荐]** 本插件依赖 **`CloudPick`** 插件进行客户端通信。虽然 `DiaoCore` 在没有 `CloudPick` 的情况下也能启动，但涉及客户端通信的功能将无法使用`那这插件就基本没用了`。请确保您的 `plugins` 文件夹中已经安装了 `CloudPick-Bukkit-x.x.x.jar`。
 
 4.  **启动服务器**:
-    *   启动您的 Spigot/Paper 1.20.1+ 服务器。
+    *   启动您的 Spigot/Paper 1.18.2+ 服务器。
 
 ## 📜 命令与权限
 
@@ -53,7 +53,7 @@
 
 ## 📝 参与贡献
 
-欢迎任何形式的贡献！如果您发现了 Bug 或有任何好的建议，请随时提交 [**Issue**](https://github.com/Giant-Diao-Team/DiaoCore/issues) (待创建)。
+欢迎任何形式的贡献！如果您发现了 Bug 或有任何好的建议，请随时提交 [**Issue**](https://github.com/Giant-Diao-Team/DiaoCore/issues)。
 ---
 
 **大貂核心 (DiaoCore)** - 为你的服务器提供坚实的核心基础！
