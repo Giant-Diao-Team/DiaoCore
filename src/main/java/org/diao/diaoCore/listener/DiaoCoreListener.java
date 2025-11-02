@@ -53,7 +53,6 @@ public class DiaoCoreListener implements Listener {
                 PacketSender.sendCustomData(killer, "diaocore_kill", entityName, entityCategory);
 
                 // 插件日志输出，方便调试
-                plugin.getLogger().info(String.format("玩家 %s 击杀了 %s (类别: %s), 已通过 diaocore_kill 发送至客户端。", killer.getName(), entityName, entityCategory));
             } else {
                 plugin.getLogger().warning("尝试发送击杀信息到客户端，但 CloudPick 插件未启用或未安装！");
             }
